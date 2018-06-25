@@ -127,20 +127,34 @@ async def on_ready():
         bot.config = config
 
         # channels
-        bot.community_channels = (
+          bot.admin_channels = (
+            discord.utils.get(server.channels, name="logs"),
+            discord.utils.get(server.channels, name="admission")
+              
+          )
+        
+        bot.etc_channels = (
+            discord.utils.get(server.channels, name="q§a-avec-developeurs"),
+            discord.utils.get(server.channels, name="reddit-gbatemp"),
+            discord.utils.get(server.channels, name="annonce"),
+            discord.utils.get(server.channels, name="eshop-server-update")
+            
+        )
+         
+        bot.stuff_channels = (
             discord.utils.get(server.channels, name="général"),
             discord.utils.get(server.channels, name="build-releases"),
             discord.utils.get(server.channels, name="ideas"),
             discord.utils.get(server.channels, name="question"),
-            discord.utils.get(server.channels, name="pictures"),
+            discord.utils.get(server.channels, name="pictures-and-reports"),
             discord.utils.get(server.channels, name="welcome"),
-            discord.utils.get(server.channels, name="bot")
+            discord.utils.get(server.channels, name="sd-size")
 
         )
         # channels
-        bot.modlogs_channel = discord.utils.get(server.channels, name="bot")
-        bot.serverlogs_channel = discord.utils.get(server.channels, name="bot")
-        bot.serverlogs_channel = discord.utils.get(server.channels, name="bot")
+        bot.modlogs_channel = discord.utils.get(server.channels, name="logs")
+        bot.serverlogs_channel = discord.utils.get(server.channels, name="logs")
+        bot.serverlogs_channel = discord.utils.get(server.channels, name="logs")
 
         # roles
         bot.halfop_role = discord.utils.get(server.roles, name="hop")
