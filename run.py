@@ -127,13 +127,13 @@ async def on_ready():
         bot.config = config
 
         # channels
-          bot.admin_channels = (
+       bot.admin_channels = (
             discord.utils.get(server.channels, name="logs"),
             discord.utils.get(server.channels, name="admission")
               
-          )
-        
-        bot.etc_channels = (
+        )
+
+       bot.etc_channels = (
             discord.utils.get(server.channels, name="q§a-avec-developeurs"),
             discord.utils.get(server.channels, name="reddit-gbatemp"),
             discord.utils.get(server.channels, name="annonce"),
