@@ -130,13 +130,13 @@ async def on_ready():
         bot.community_channels = (
             discord.utils.get(server.channels, name="logs"),
             discord.utils.get(server.channels, name="admission"),
-
             discord.utils.get(server.channels, name="q§a-avec-developeurs"),
             discord.utils.get(server.channels, name="reddit-gbatemp"),
             discord.utils.get(server.channels, name="annonce"),
             discord.utils.get(server.channels, name="eshop-server-update"),
-
-            discord.utils.get(server.channels, name="général"),
+            discord.utils.get(server.channels, name="général-fr"),
+            discord.utils.get(server.channels, name="général-en"),
+            discord.utils.get(server.channels, name="général-sp"),
             discord.utils.get(server.channels, name="build-releases"),
             discord.utils.get(server.channels, name="ideas"),
             discord.utils.get(server.channels, name="question"),
